@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import Counter from './Counter'
 import {SimpleTransfer, InputTransfer} from './TransferComps'
+import UseContext from './UseContext'
 import Demo from './Demo'
 class App extends Component {
     render() {
@@ -15,6 +16,9 @@ class App extends Component {
                 </Demo>
                 <Demo title="自定义Hooks复用">
                     <InputTransfer source={[{ name: 'Tom' }, { name: 'Jerry' }, {name: 'Luke'}, {name: 'Anakin'}, {name: 'Walter'}]} />
+                </Demo>
+                <Demo title="useContext">
+                    <UseContext />
                 </Demo>
             </div>
         )
