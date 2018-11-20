@@ -5,6 +5,7 @@ import {SimpleTransfer, InputTransfer} from './TransferComps'
 import UseContext from './UseContext'
 import UseSetState from './UseSetState'
 import Demo from './Demo'
+import UseReducer from './UseReducer'
 class App extends Component {
     render() {
         return (
@@ -23,6 +24,9 @@ class App extends Component {
                 </Demo>
                 <Demo title="useSetState">
                     <UseSetState />
+                </Demo>
+                <Demo title="useReducer">
+                    <UseReducer />
                 </Demo>
             </div>
         )
