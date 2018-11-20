@@ -6,6 +6,7 @@ import UseContext from './UseContext'
 import UseSetState from './UseSetState'
 import Demo from './Demo'
 import UseReducer from './UseReducer'
+import UseMemo from './UseMemo'
 class App extends Component {
     render() {
         return (
@@ -27,6 +28,9 @@ class App extends Component {
                 </Demo>
                 <Demo title="useReducer">
                     <UseReducer />
+                </Demo>
+                <Demo title="useMemo">
+                    <UseMemo />
                 </Demo>
             </div>
         )
