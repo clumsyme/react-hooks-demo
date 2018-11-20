@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react'
+import React, { useState } from 'react'
 
 function useSetState(initState = {}) {
     const [state, replaceState] = useState(initState)

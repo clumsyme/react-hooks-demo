@@ -3,7 +3,7 @@ import './App.css'
 import Counter from './Counter'
 import {SimpleTransfer, InputTransfer} from './TransferComps'
 import UseContext from './UseContext'
-import UseSetState, {OldState} from './UseSetState'
+import UseSetState from './UseSetState'
 import Demo from './Demo'
 class App extends Component {
     render() {

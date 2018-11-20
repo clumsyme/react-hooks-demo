@@ -23,7 +23,6 @@ export default function useTransfer(initSource, attrKey) {
         setTarget(Transfer.removeFromTarget(target, item, attrKey))
     }
     function selected(item) {
-        console.warn(target.some(currentItem => item[attrKey] === currentItem[attrKey]))
         return target.some(currentItem => item[attrKey] === currentItem[attrKey])
     }
     return [source, target, add, remove, selected]
