@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import './App.css'
 import Counter from './Counter'
-import {SimpleTransfer, InputTransfer} from './TransferComps'
+import { SimpleTransfer, InputTransfer } from './TransferComps'
 import UseContext from './UseContext'
 import UseSetState from './UseSetState'
 import Demo from './Demo'
 import UseReducer from './UseReducer'
 import UseMemo from './UseMemo'
+import UseAbortableFetch from './UseAbortableFetch'
 class App extends Component {
     render() {
         return (
@@ -15,10 +16,26 @@ class App extends Component {
                     <Counter />
                 </Demo>
                 <Demo title="自定义Hooks">
-                    <SimpleTransfer source={[{ name: 'Tom' }, { name: 'Jerry' }, {name: 'Luke'}, {name: 'Anakin'}, {name: 'Walter'}]} />
+                    <SimpleTransfer
+                        source={[
+                            { name: 'Tom' },
+                            { name: 'Jerry' },
+                            { name: 'Luke' },
+                            { name: 'Anakin' },
+                            { name: 'Walter' },
+                        ]}
+                    />
                 </Demo>
                 <Demo title="自定义Hooks复用">
-                    <InputTransfer source={[{ name: 'Tom' }, { name: 'Jerry' }, {name: 'Luke'}, {name: 'Anakin'}, {name: 'Walter'}]} />
+                    <InputTransfer
+                        source={[
+                            { name: 'Tom' },
+                            { name: 'Jerry' },
+                            { name: 'Luke' },
+                            { name: 'Anakin' },
+                            { name: 'Walter' },
+                        ]}
+                    />
                 </Demo>
                 <Demo title="useContext">
                     <UseContext />
@@ -31,6 +48,9 @@ class App extends Component {
                 </Demo>
                 <Demo title="useMemo">
                     <UseMemo />
+                </Demo>
+                <Demo title="useAbortableFetch">
+                    <UseAbortableFetch />
                 </Demo>
             </div>
         )
